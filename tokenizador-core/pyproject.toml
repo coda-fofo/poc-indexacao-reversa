@@ -1,0 +1,28 @@
+[project]
+name = "tokenizador-core"
+version = "1.0.0"
+description = "Serviço para a tokenização de linguagem natural no TattooGo."
+authors = [
+    {name = "entr0pie",email = "caiohporcel@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn[standard] (>=0.34.1,<0.35.0)",
+    "nltk (>=3.9.1,<4.0.0)"
+]
+
+[tool.poetry]
+name = "indexador-core"
+version = "1.0.0"
+packages = [{ include = "src" }]
+
+[tool.poetry.scripts]
+setup_nltk = "scripts.nltk_datasets:main"
+start = "uvicorn src.main:app --reload"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
