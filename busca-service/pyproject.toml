@@ -1,0 +1,22 @@
+[project]
+name = "busca-service"
+version = "0.1.0"
+description = "Serviço para busca indexada de tatuadores."
+authors = [
+    {name = "entr0pie",email = "caiohporcel@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn[standard] (>=0.34.1,<0.35.0)"
+]
+
+[tool.poetry]
+name = "busca-service"
+version = "0.1.0"
+packages = [{ include = "src" }]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
