@@ -2,9 +2,11 @@ from abc import ABC, abstractmethod
 from pydantic import BaseModel
 
 class DescricaoPipeline(BaseModel):
+    """
+    Informações complementares para a Pipeline.
+    """
     id: str
     descricao: str
-
 
 class TokensPipeline(ABC):
     """
@@ -24,5 +26,3 @@ class TokensPipeline(ABC):
         Retorna a descrição da pipeline.
         """
         pass
-
-

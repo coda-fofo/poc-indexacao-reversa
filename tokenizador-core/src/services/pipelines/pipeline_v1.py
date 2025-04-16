@@ -1,13 +1,8 @@
-import re
-
+from re import sub
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
-
-from src.pipelines import TokensPipeline, DescricaoPipeline
-
-STOP_WORDS = set(stopwords.words('portuguese'))
-STEMMER = SnowballStemmer("portuguese")
+from src.services.pipelines.token_pipeline import TokensPipeline, DescricaoPipeline
 
 class PipelineV1(TokensPipeline):
     def __init__(self):
@@ -28,9 +23,10 @@ class PipelineV1(TokensPipeline):
             descricao="Primeira versão do Tokenizador. Remove caractéres especiais, stop-words e radicaliza os tokens."
         )
     
-    def _sanitizar_texto(self, texto: str) -> str:        
+    def _sanitizar_texto(self, texto: str) -> str:
+        texto = sub(r"#([\w-]+)", lambda m: m.group(1).replace("-", " "), texto)  
         texto = texto.strip()
-        texto = re.sub(r'[^\w\s]', '', texto)
+        texto = sub(r'[^\w\s]', '', texto)
         texto = texto.lower()
         
         return texto
