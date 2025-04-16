@@ -15,7 +15,7 @@ poetry run setup_nltk
 - Por fim, inicie o app:
 
 ```bash
-uvicorn src.main:app --reload
+uvicorn src.main:app --port 8010 --reload 
 ```
 
-- E acesse [`localhost:8000/docs`](http://localhost:8000/docs).
+- E acesse [`localhost:8010/docs`](http://localhost:8010/docs).

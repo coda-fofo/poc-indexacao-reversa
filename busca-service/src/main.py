@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from src.router import buscador_router
 
 app = FastAPI()
 
-@app.get('/')
-def hello_world():
-    return "Hello, world!"
+app.include_router(buscador_router)

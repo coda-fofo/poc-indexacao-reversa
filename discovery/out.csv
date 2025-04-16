@@ -1,186 +1,130 @@
 ,Term,Documents
-0,caio,"[0, 11]"
-1,henrique,[0]
+0,cai,"[0, 11]"
+1,henriqu,[0]
 2,porcel,[0]
 3,tatuador,"[0, 2]"
 4,especializ,[0]
 5,old,"[0, 23]"
 6,school,"[0, 23]"
-7,oldschool,"[0, 9, 23]"
-8,curitiba,"[0, 9, 18, 3]"
-9,brasil,"[0, 9, 11, 23]"
-10,sao-paulo,"[0, 1, 4, 6, 10, 19, 22]"
-11,retro,"[0, 23]"
-12,kauan,[1]
-13,alexandre,[1]
-14,mendes,"[1, 11]"
-15,silva,[1]
-16,realism,"[1, 19]"
-17,mágic,[1]
-18,sp,"[1, 4, 8, 12, 14, 15, 19, 22]"
-19,realismo,"[1, 19]"
-20,rutz,[1]
-21,joão,[2]
-22,pedro,[2]
-23,oliveira,[2]
-24,fof,[2]
-25,finelin,"[2, 18]"
-26,port,[2]
-27,alegr,[2]
-28,fineline,"[8, 2, 18]"
-29,fofura,[2]
-30,porto-alegre,"[2, 13]"
-31,vinicius,[3]
-32,rebelatto,[3]
-33,leõ,[3]
-34,relógi,[3]
-35,pra,[3]
-36,vôl,[3]
-37,leão,[3]
-38,relógio,[3]
-39,praia,[3]
-40,volei,[3]
-41,lara,[4]
-42,cristina,[4]
-43,souza,[4]
-44,tatuagens,"[10, 4]"
-45,delic,[4]
-46,flor,[4]
-47,alma,"[4, 21]"
-48,feminin,[4]
-49,delicada,[4]
-50,floral,[4]
-51,feminina,[4]
-52,hugo,[5]
-53,martins,[5]
-54,pret,"[19, 5]"
-55,cinz,"[19, 5]"
-56,sombr,[5]
-57,pes,[5]
-58,blackandgrey,"[19, 5]"
-59,sombra,[5]
-60,power,[5]
-61,rio,"[16, 11, 5]"
-62,rj,"[16, 11, 20, 5]"
-63,daniele,[6]
-64,rocha,"[21, 6]"
-65,crâni,[6]
-66,serpent,[6]
-67,tud,"[11, 6]"
-68,sombri,[6]
-69,dark,[6]
-70,skull,[6]
-71,serpente,[6]
-72,gótica,[6]
-73,fernando,[7]
-74,lima,[7]
-75,min,[7]
-76,pok,[7]
-77,autor,[7]
-78,diret,[7]
-79,bh,"[21, 7]"
-80,minipoke,[7]
-81,autoral,"[21, 7]"
-82,tattoo,"[7, 9, 13, 22, 23]"
-83,minimalista,"[18, 7]"
-84,mariana,[8]
-85,costa,"[8, 19]"
-86,arte,"[8, 10, 14, 17, 20, 21]"
-87,fin,[8]
-88,trac,"[8, 10, 22, 23]"
-89,limp,[8]
-90,coraçã,[8]
-91,chei,[8]
-92,fineart,[8]
-93,amor,[8]
-94,minimal,"[8, 14]"
-95,eduardo,"[9, 21]"
-96,pereira,[9]
-97,tradicional,"[9, 23]"
-98,american,[9]
-99,toqu,[9]
-100,brasileir,[9]
-101,beatriz,[10]
-102,tanaka,[10]
-103,orient,[10]
-104,precis,[10]
-105,japonesa,[10]
-106,oriental,[10]
-107,precisão,[10]
-108,tribal,"[17, 11]"
-109,neotradicional,"[11, 13]"
-110,riodejaneiro,[11]
-111,aline,[12]
-112,barreto,[12]
-113,pontilh,"[12, 20]"
-114,mandal,"[12, 20]"
-115,propósit,[12]
-116,pontilhismo,"[12, 20]"
-117,mandala,"[12, 20]"
-118,espiritual,"[12, 20]"
-119,sagrado,[12]
-120,gustavo,[13]
-121,andrade,"[20, 13]"
-122,cor,[13]
-123,viv,"[16, 13]"
-124,muit,[13]
-125,energ,[13]
-126,cores,[13]
-127,vibrante,"[13, 22]"
-128,juliana,[14]
-129,ferreira,[14]
-130,especial,[14]
-131,blackwork,[14]
-132,geométr,[14]
-133,geométrico,[14]
-134,leonardo,[15]
-135,matos,[15]
-136,dotwork,[15]
-137,intens,[15]
-138,simbolog,[15]
-139,ocult,[15]
-140,simbólico,[15]
-141,tatuagem,[15]
-142,místico,[15]
-143,carolina,[16]
-144,dias,[16]
-145,aquarel,[16]
-146,pel,[16]
-147,pur,[16]
-148,emoçã,"[16, 19]"
-149,aquarela,[16]
-150,colorido,"[16, 22]"
-151,emoção,[16]
-152,rafael,[17]
-153,albuquerque,[17]
-154,trib,[17]
-155,modern,[17]
-156,cultur,[17]
-157,cultura,[17]
-158,ancestral,[17]
-159,brasilia,[17]
-160,isadora,[18]
-161,menezes,[18]
-162,referent,[18]
-163,botân,[18]
-164,botânico,[18]
-165,natural,[18]
-166,thiago,[19]
-167,real,[19]
-168,detalhado,[19]
-169,luciana,[20]
-170,únic,[20]
-171,espiritualidade,[20]
-172,sketch,[21]
-173,tatto,[21]
-174,artist,[21]
-175,criatividade,[21]
-176,nathalia,[22]
-177,gomes,[22]
-178,color,[22]
-179,vibrant,[22]
-180,ous,[22]
-181,bruno,[23]
-182,figueira,[23]
-183,raiz,[23]
-184,marcant,[23]
+7,kauan,[1]
+8,alexandr,[1]
+9,mend,"[1, 11]"
+10,silv,[1]
+11,realism,"[1, 19]"
+12,mágic,[1]
+13,sp,[1]
+14,joã,[2]
+15,pedr,[2]
+16,oliveir,[2]
+17,fof,[2]
+18,finelin,"[2, 18]"
+19,port,[2]
+20,alegr,[2]
+21,vinicius,[3]
+22,rebelatt,[3]
+23,leõ,[3]
+24,relógi,[3]
+25,pra,[3]
+26,vôl,[3]
+27,lar,[4]
+28,cristin,[4]
+29,souz,[4]
+30,tatuagens,"[10, 4]"
+31,delic,[4]
+32,flor,[4]
+33,alma,"[4, 21]"
+34,feminin,[4]
+35,hug,[5]
+36,martins,[5]
+37,pret,"[19, 5]"
+38,cinz,"[19, 5]"
+39,sombr,[5]
+40,pes,[5]
+41,daniel,[6]
+42,roch,"[21, 6]"
+43,crâni,[6]
+44,serpent,[6]
+45,tud,"[11, 6]"
+46,sombri,[6]
+47,fern,[7]
+48,lim,[7]
+49,min,[7]
+50,pok,[7]
+51,autor,[7]
+52,diret,[7]
+53,bh,[7]
+54,marian,[8]
+55,cost,"[8, 19]"
+56,arte,[8]
+57,fin,[8]
+58,trac,"[8, 10, 22, 23]"
+59,limp,[8]
+60,coraçã,[8]
+61,chei,[8]
+62,eduard,"[9, 21]"
+63,pereir,[9]
+64,tradicional,[9]
+65,american,[9]
+66,toqu,[9]
+67,brasileir,[9]
+68,beatriz,[10]
+69,tanak,[10]
+70,orient,[10]
+71,precis,[10]
+72,tribal,[11]
+73,neotradicional,"[11, 13]"
+74,rio,[11]
+75,alin,[12]
+76,barret,[12]
+77,pontilh,"[12, 20]"
+78,mandal,"[12, 20]"
+79,propósit,[12]
+80,gustav,[13]
+81,andrad,"[20, 13]"
+82,cor,[13]
+83,viv,"[16, 13]"
+84,muit,[13]
+85,energ,[13]
+86,julian,[14]
+87,ferreir,[14]
+88,especial,[14]
+89,blackwork,[14]
+90,geométr,[14]
+91,leonard,[15]
+92,mat,[15]
+93,dotwork,[15]
+94,intens,[15]
+95,simbolog,[15]
+96,ocult,[15]
+97,carolin,[16]
+98,dias,[16]
+99,aquarel,[16]
+100,pel,[16]
+101,pur,[16]
+102,emoçã,"[16, 19]"
+103,rafael,[17]
+104,albuquerqu,[17]
+105,trib,[17]
+106,modern,[17]
+107,cultur,[17]
+108,isador,[18]
+109,menez,[18]
+110,referent,[18]
+111,botân,[18]
+112,thiag,[19]
+113,real,[19]
+114,lucian,[20]
+115,espiritual,[20]
+116,únic,[20]
+117,sketch,[21]
+118,tatto,[21]
+119,artist,[21]
+120,nathal,[22]
+121,gom,[22]
+122,color,[22]
+123,vibrant,[22]
+124,ous,[22]
+125,brun,[23]
+126,figueir,[23]
+127,raiz,[23]
+128,marcant,[23]
