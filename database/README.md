@@ -1,0 +1,5 @@
+# Database
+
+```bash
+docker run -p 5432:5432 -e POSTGRES_USER=realuser -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=TATTOOGO postgres     
+```
