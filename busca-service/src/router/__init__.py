@@ -1,0 +1,1 @@
+from src.router.buscador_router import router as buscador_router
