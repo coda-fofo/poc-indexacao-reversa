@@ -9,12 +9,12 @@ export default function search() {
 
     const handleSearch = async () => {
         
-        const res = await fetch(`https://dummyjson.com/users/search?q=${query}`)
+        const res = await fetch(`http://127.0.0.1:3000/buscar/${query}`)
         const data = await res.json()
 
-        console.log(data.users)
+        console.log(data)
 
-        setResponse(data.users)
+        setResponse(data)
         
 
     }
