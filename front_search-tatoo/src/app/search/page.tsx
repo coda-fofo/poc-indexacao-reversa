@@ -9,7 +9,7 @@ export default function search() {
 
     const handleSearch = async () => {
         
-        const res = await fetch(`http://127.0.0.1:3000/buscar/${query}`)
+        const res = await fetch(`http://127.0.0.1:8000/buscador/buscar?pesquisa=${query}`)
         const data = await res.json()
 
         console.log(data)

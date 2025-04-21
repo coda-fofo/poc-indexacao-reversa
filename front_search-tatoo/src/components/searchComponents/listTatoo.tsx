@@ -13,10 +13,10 @@ export function ListTatoo({ response }: { response: any[] }) {
                             <ul key={tatoo.id} className="p-4 rounded">
                                 <li>
                                     <h2 className="font-bold">
-                                        {tatoo.firstName} {tatoo.lastName}
+                                        {tatoo.nome_de_exibicao}
                                     </h2>
-                                    <p>@{tatoo.username}</p>
-                                    <p>Email: {tatoo.email}</p>
+                                    <p>@{tatoo.nome_de_usuario}</p>
+                                    <p>Descrição: {tatoo.descricao}</p>
                                     <hr className="text-gray-200 mt-5" />
                                 </li>
                             </ul>
