@@ -5,3 +5,9 @@
 ## Visão Geral da Aplicação
 
 ![Arquitetura da Prova de Conceito](./assets/arquitetura.png)
+
+## Docker 
+
+```bash
+docker network create rabisko-network
+```

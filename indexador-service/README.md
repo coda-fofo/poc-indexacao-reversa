@@ -16,3 +16,10 @@ poetry install
 ```bash
 uvicorn app.main:app --port 8011 --reload
 ```
+
+## docker
+
+```bash
+docker build -t indexador-service .
+docker run -p 8011:8011 --network=rabisko-netwok --name=indexador-service indexador-service
+```
