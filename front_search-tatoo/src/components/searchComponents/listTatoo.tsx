@@ -17,6 +17,21 @@ export function ListTatoo({ response }: { response: any[] }) {
                                     </h2>
                                     <p>@{tatoo.nome_de_usuario}</p>
                                     <p>Descrição: {tatoo.descricao}</p>
+
+                                     {tatoo.hashtags && tatoo.hashtags.length > 0 && (
+
+                                            <div className="mt-2 flex flex-wrap gap-2">
+                                                {tatoo.hashtags.map((tag: string, index: number) => (
+                                                    <span 
+                                                    key={index}
+                                                    className="bg-blue-600 text-amber-50 px-3 py-1 text-sm rounded-full">
+                                                        #{tag}
+                                                    </span> 
+                                                ))}
+                                            </div>
+                                        )
+                                    }
+                                    
                                     <hr className="text-gray-200 mt-5" />
                                 </li>
                             </ul>

@@ -7,31 +7,33 @@ export default function register() {
   const [tatoo, setTatoo] = useState({
     nome: "",
     usuario: "",
-    descricao: ""
+    descricao: "",
+    hashtags: ""
   })
 
   const sendData = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
-      const res = fetch('http://127.0.0.1:3000/gravar', {
+      const res = await fetch('http://127.0.0.1:8011/index', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          nome: tatoo.nome,
-          usuario: tatoo.usuario,
-          descricao: tatoo.descricao
+          nome_completo: tatoo.nome,
+          nome_de_usuario: tatoo.usuario,
+          descricao: tatoo.descricao,
+          hashtags: tatoo.hashtags.split(',').map(tag => tag.trim()),
         })
       });
       
-      const data = (await res).json()
+      const data = await res.json()
       console.log("Usuario cadastrado com sucesso:", data);
-      console.log((await res).json)
 
       setTatoo({
         nome: "",
         usuario: "",
-        descricao: ""
+        descricao: "",
+        hashtags: ""
       });
 
       } catch(error) {
@@ -95,6 +97,22 @@ export default function register() {
           type="text"
           className="w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           value={tatoo.descricao}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className="relative w-full max-w-md mt-6">
+        <label
+          htmlFor="nome"
+          className="absolute -top-2 left-4 bg-white px-1 text-sm text-gray-600"
+        >
+          Hashtags (Separado por virgula)
+        </label>
+        <input
+          id="hashtags"
+          type="text"
+          className="w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          value={tatoo.hashtags}
           onChange={handleChange}
         />
       </div>
