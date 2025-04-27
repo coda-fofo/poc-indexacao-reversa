@@ -21,5 +21,5 @@ uvicorn app.main:app --port 8011 --reload
 
 ```bash
 docker build -t indexador-service .
-docker run -p 8011:8011 --network=rabisko-netwok --name=indexador-service indexador-service
+docker run -p 8011:8011 --network=rabisko_network --name=indexador-service indexador-service
 ```
