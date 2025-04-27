@@ -4,8 +4,8 @@ import { Header } from "../components/header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Consumo de API e indexição reversa",
-  description: "Consumo de API e indexição reversa",
+  title: "Consumo de API e indexação reversa",
+  description: "Consumo de API e indexação reversa",
 }
 
 

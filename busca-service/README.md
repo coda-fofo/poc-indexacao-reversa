@@ -18,3 +18,10 @@ uvicorn src.main:app --reload
 ```
 
 - E acesse [`localhost:8000/docs`](http://localhost:8000/docs).
+
+## Docker
+
+```bash
+docker build -t busca-service .
+docker run -p 8000:8000 --network=rabisko_network --name busca-service busca-service
+```
