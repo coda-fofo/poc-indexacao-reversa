@@ -4,7 +4,7 @@
 
 ## Visão Geral da Aplicação
 
-![Arquitetura da Prova de Conceito](./assets/arquitetura.png)
+![Arquitetura da Prova de Conceito](./assets/arquitetura_2.png)
 
 ## Docker 
 
