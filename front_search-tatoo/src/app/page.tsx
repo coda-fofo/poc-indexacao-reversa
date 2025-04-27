@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function register() {
+export default function Register() {
 
   const [tatoo, setTatoo] = useState({
     nome: "",

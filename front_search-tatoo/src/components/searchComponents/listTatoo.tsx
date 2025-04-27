@@ -1,7 +1,6 @@
-'use client'
+import { Tatoo } from "@/app/dtos/tatoo";
 
-export function ListTatoo({ response }: { response: any[] }) {
-
+export function ListTatoo({ response }: { response: Tatoo[] }) {
     return (
         <div>
             <div className="flex items-center justify-center mt-10">

@@ -2,28 +2,21 @@
 
 import { useState } from "react"
 import { ListTatoo } from "@/components/searchComponents/listTatoo"
+import { Tatoo } from "../dtos/tatoo"
 
-export default function search() {
+export default function Search() {
     const [query, setQuery] = useState("")
-    const [response, setResponse] = useState<any[]>([])
+    const [response, setResponse] = useState<Tatoo[]>([])
 
     const handleSearch = async () => {
-        
-        const res = await fetch(`http://127.0.0.1:8000/buscador/buscar?pesquisa=${query}`)
-        const data = await res.json()
-
-        console.log(data)
-
-        setResponse(data)
-        
-
+        const res = await fetch(`http://127.0.0.1:8000/buscador/buscar?pesquisa=${query}`);
+        const data = await res.json();
+        setResponse(data);
     }
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if(e.key === 'Enter') { handleSearch() }
     }
-
-
 
     return (
         <div>
