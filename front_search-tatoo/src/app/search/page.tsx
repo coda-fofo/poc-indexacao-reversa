@@ -3,14 +3,23 @@
 import { useState } from "react"
 import { ListTatoo } from "@/components/searchComponents/listTatoo"
 import { Tatoo } from "../dtos/tatoo"
+import { getEnv } from "@/config/env"
+import urlJoin from "url-join"
+
+async function fazerBusca(query: string): Promise<Tatoo[]> {
+    const env = getEnv();
+    const params = new URLSearchParams({ 'pesquisa': query });
+    const url = urlJoin(env.NEXT_PUBLIC_BUSCADOR_SERVICE_URL, 'buscador/buscar') + '?' + params.toString(); 
+    const res = await fetch(url);
+    return await res.json();
+}
 
 export default function Search() {
     const [query, setQuery] = useState("")
     const [response, setResponse] = useState<Tatoo[]>([])
 
     const handleSearch = async () => {
-        const res = await fetch(`http://127.0.0.1:8000/buscador/buscar?pesquisa=${query}`);
-        const data = await res.json();
+        const data = await fazerBusca(query);
         setResponse(data);
     }
 
