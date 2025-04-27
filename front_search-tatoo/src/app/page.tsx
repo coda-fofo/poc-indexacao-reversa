@@ -1,8 +1,29 @@
 "use client"
 
+import { getEnv } from "@/config/env";
 import { useState } from "react"
+import urlJoin from "url-join";
 
-export default function register() {
+type CriarTatuadorRequest = {
+  nome_completo: string;
+  nome_de_usuario: string;
+  descricao: string;
+  hashtags: string[];
+}
+
+async function criarNovoTatuador(request: CriarTatuadorRequest): Promise<void> {
+  const env = getEnv();
+  const url = urlJoin(env.NEXT_PUBLIC_INDEXADOR_SERVICE_URL, '/index');
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(request),
+  });
+  
+  return await res.json();
+}
+
+export default function Register() {
 
   const [tatoo, setTatoo] = useState({
     nome: "",
@@ -14,19 +35,14 @@ export default function register() {
   const sendData = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    try {
-      const res = await fetch('http://127.0.0.1:8011/index', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          nome_completo: tatoo.nome,
-          nome_de_usuario: tatoo.usuario,
-          descricao: tatoo.descricao,
-          hashtags: tatoo.hashtags.split(',').map(tag => tag.trim()),
-        })
+    try {      
+      const data = await criarNovoTatuador({
+        nome_completo: tatoo.nome,
+        nome_de_usuario: tatoo.usuario,
+        descricao: tatoo.descricao,
+        hashtags: tatoo.hashtags.split(',').map(tag => tag.trim()),
       });
       
-      const data = await res.json()
       console.log("Usuario cadastrado com sucesso:", data);
 
       setTatoo({

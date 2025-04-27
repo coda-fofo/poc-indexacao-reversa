@@ -1,4 +1,20 @@
+## Configuração do .env
+
+- Crie um arquivo `.env` com as seguintes configurações:
+
+```env
+NEXT_PUBLIC_BUSCADOR_SERVICE_URL=http://localhost:8000
+NEXT_PUBLIC_INDEXADOR_SERVICE_URL=http://localhost:8010
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Docker
+
+```bash
+docker build -t front-search-tatoo .
+docker run -p 3000:3000 --network=rabisko_network front-search-tatoo
+```
 
 ## Getting Started
 
